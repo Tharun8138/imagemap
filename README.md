@@ -1,28 +1,29 @@
-Ex04 Places Around Me
-Date:24.11.2024
-AIM
+# Ex04 Places Around Me
+## Date:24.11.2024
+## AIM
 To develop a website to display details about the places around my house.
 
-DESIGN STEPS
-STEP 1
+## DESIGN STEPS
+### STEP 1
 Create a Django admin interface.
 
-STEP 2
+### STEP 2
 Download your city map from Google.
 
-STEP 3
+### STEP 3
 Using tag name the map.
 
-STEP 4
+### STEP 4
 Create clickable regions in the image using tag.
 
-STEP 5
+### STEP 5
 Write HTML programs for all the regions identified.
 
-STEP 6
+### STEP 6
 Execute the programs and publish them.
 
-CODE :
+## CODE :
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,8 +51,8 @@ CODE :
     
 </body>
 </html>
-
-
+```
+```
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -63,8 +64,9 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-OUTPUT :
+```
+## OUTPUT :
 ![image map](https://github.com/user-attachments/assets/e3689baa-78fc-45af-9f17-7bf9d1065bf5)
 
-RESULT
+## RESULT
 The program for implementing image maps using HTML is executed successfully.
